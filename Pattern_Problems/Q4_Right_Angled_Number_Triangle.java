@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+<<<<<<< HEAD
 /* Pattern-4
         1
         1 2
@@ -8,6 +9,8 @@ import java.util.Scanner;
         1 2 3 4 5
                     */
 
+=======
+>>>>>>> 4925cab03242f9a49405027191dcb3af92a07ca7
 public class Q4_Right_Angled_Number_Triangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
