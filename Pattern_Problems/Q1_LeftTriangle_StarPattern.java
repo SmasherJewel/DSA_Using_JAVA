@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/* Pattern-1
+        *
+        * *
+        * * *
+        * * * *
+        * * * * *
+                        */
+
 public class Q1_LeftTriangle_StarPattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

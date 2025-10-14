@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+/* Pattern-2
+        * * * * *
+        * * * * *
+        * * * * *
+        * * * * *
+        * * * * *
+                    */
+
+
 public class Q2_Solid_Square_Pattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
