@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-<<<<<<< HEAD
 /* Pattern-3
         * * * * *
         * * * *
@@ -9,8 +8,6 @@ import java.util.Scanner;
         *
                 */
 
-=======
->>>>>>> 4925cab03242f9a49405027191dcb3af92a07ca7
 public class Q3_Inverted_Right_Angled_Triangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
