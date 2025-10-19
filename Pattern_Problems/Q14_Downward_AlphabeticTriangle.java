@@ -1,5 +1,15 @@
 import java.util.Scanner;
 
+/* Pattern-14
+
+A B C D E
+A B C D
+A B C
+A B
+A
+
+ */
+
 public class Q14_Downward_AlphabeticTriangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

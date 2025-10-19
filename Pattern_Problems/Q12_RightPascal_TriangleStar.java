@@ -1,5 +1,18 @@
 import java.util.Scanner;
 
+/* Pattern-12
+        *
+        **
+        ***
+        ****
+        *****
+        ****
+        ***
+        **
+        *
+
+ */
+
 public class Q12_RightPascal_TriangleStar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
