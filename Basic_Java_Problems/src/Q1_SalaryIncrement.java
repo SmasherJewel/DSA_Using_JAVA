@@ -26,6 +26,7 @@ public class Q1_SalaryIncrement {
         salary = sc.nextDouble();
         System.out.println("Enter Your Performance Rating (1.0 to 5.0): ");
         rating = sc.nextDouble();
+        sc.close();
 
         double incrementPercentage = 0.0;
         if (rating >= 1.0 && rating <= 3.0){
