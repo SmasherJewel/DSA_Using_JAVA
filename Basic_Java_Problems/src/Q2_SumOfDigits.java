@@ -18,6 +18,7 @@ public class Q2_SumOfDigits {
         System.out.print("Enter a number to find the sum of its digits: ");
         int num = sc.nextInt();
         int digitSum = 0;
+        sc.close();
 
         while (num > 0){
             digitSum += num % 10;
