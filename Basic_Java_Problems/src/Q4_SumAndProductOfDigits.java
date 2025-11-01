@@ -14,6 +14,7 @@ The program should:
 6. If there are no odd digits, display a suitable message.
 */
 
+// Optimized solution
 
 import java.util.Scanner;
 
