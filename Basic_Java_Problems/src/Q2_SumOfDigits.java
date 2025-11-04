@@ -17,6 +17,8 @@ public class Q2_SumOfDigits {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number to find the sum of its digits: ");
         int num = sc.nextInt();
+        // For Handling Negative Numbers
+        num = Math.abs(num);
         int digitSum = 0;
         sc.close();
 
