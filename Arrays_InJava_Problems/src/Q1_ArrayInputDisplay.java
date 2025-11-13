@@ -26,6 +26,7 @@ Array Elements are:
 50
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q1_ArrayInputDisplay {
@@ -41,9 +42,12 @@ public class Q1_ArrayInputDisplay {
         }
         sc.close();
 
-        System.out.println("Array Elements are: ");
+        /*System.out.println("Array Elements are: ");
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
-        }
+        }*/
+
+        // Printing the entire array in a single line using Arrays.toString()
+        System.out.println(Arrays.toString(arr));
     }
 }
