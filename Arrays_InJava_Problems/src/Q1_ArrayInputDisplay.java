@@ -42,12 +42,19 @@ public class Q1_ArrayInputDisplay {
         }
         sc.close();
 
+        // Printing all array elements one by one using a loop
         /*System.out.println("Array Elements are: ");
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }*/
 
         // Printing the entire array in a single line using Arrays.toString()
-        System.out.println(Arrays.toString(arr));
+        /*System.out.println(Arrays.toString(arr));*/
+
+        // Printing all array elements using an enhanced for-loop (for-each loop)
+        System.out.println("Array Elements are: ");
+        for (int result : arr){
+            System.out.println(result);
+        }
     }
 }
