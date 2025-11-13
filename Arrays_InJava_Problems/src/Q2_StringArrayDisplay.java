@@ -35,7 +35,7 @@ public class Q2_StringArrayDisplay {
             str[i] = sc.next();
         }
         sc.close();
-
+        // Printing array using Arrays.toString()
         System.out.println(Arrays.toString(str));
     }
 }
