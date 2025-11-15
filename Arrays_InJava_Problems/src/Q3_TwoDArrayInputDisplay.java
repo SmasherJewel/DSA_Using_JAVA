@@ -41,9 +41,15 @@ public class Q3_TwoDArrayInputDisplay {
         }
         sc.close();
 
+        // Using this for best readable output
+        System.out.println("Print using Enhanced for-loop: ");
+        for (int[] rowData : arr){
+            System.out.println(Arrays.toString(rowData));
+        }
+
         // Shortcut way to print
-        System.out.println("Array Elements are: ");
-        System.out.println(Arrays.deepToString(arr));
+        /*System.out.println("Array Elements are: ");
+        System.out.println(Arrays.deepToString(arr));*/
 
         // Using Index based
         /*System.out.println("Array Elements are: ");
