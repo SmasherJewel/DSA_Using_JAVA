@@ -21,6 +21,7 @@ Array Elements are:
 4 5 6
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q3_TwoDArrayInputDisplay {
@@ -39,12 +40,18 @@ public class Q3_TwoDArrayInputDisplay {
             }
         }
         sc.close();
+
+        // Shortcut way to print
         System.out.println("Array Elements are: ");
+        System.out.println(Arrays.deepToString(arr));
+
+        // Using Index based
+        /*System.out.println("Array Elements are: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
-        }
+        }*/
     }
 }
