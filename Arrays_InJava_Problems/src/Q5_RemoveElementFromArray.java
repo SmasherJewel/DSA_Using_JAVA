@@ -25,9 +25,67 @@ Updated Array after removing the value:
 
 // LeetCode 27 no Problem
 
+// Optimized Approach Using Two-Pointer Approach --> Order is not Maintained
+
 import java.util.Scanner;
 
 public class Q5_RemoveElementFromArray {
+
+    static int removeElement(int[] num, int val){
+        int left = 0;
+        int right = num.length - 1;
+
+        while (left <= right){
+            if (num[left] == val){
+                num[left] = num[right];
+                right--;
+            }else {
+                left++;
+            }
+        }
+        return left;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the Array: ");
+        int size = sc.nextInt();
+        // Checking for Positive value
+        if (size <= 0){
+            System.out.println("Array Size must be Positive");
+            sc.close();
+            return;
+        }
+        int[] arr = new int[size];
+
+        // Taking Input
+        System.out.println("Enter " + size + " Elements: ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the value you want to remove: ");
+        int val = sc.nextInt();
+        sc.close();
+
+        int k = removeElement(arr,val);
+        System.out.println("Number of elements after removal: " + k);
+
+        System.out.println("Updated Array: ");
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[i]+ " ");
+        }
+        System.out.println();
+    }
+}
+
+
+// Not An Optimized Approached --> Order is Maintained
+
+/*
+import java.util.Scanner;
+
+public class Q5_RemoveElementFromArray {
+
 
     static int removeElement(int[] num, int val){
         int k = 0;
@@ -62,3 +120,4 @@ public class Q5_RemoveElementFromArray {
         System.out.println();
     }
 }
+*/
