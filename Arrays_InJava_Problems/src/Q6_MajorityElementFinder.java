@@ -22,8 +22,66 @@ Output:
 2
 */
 
+// Moore's Voting Algorithm to find a majority element in an array
+
+import java.util.Scanner;
+
+public class Q6_MajorityElementFinder {
+
+    static int findMajorityElement(int[] arr, int size){
+        int count = 0;
+        int majorityElement = 0;
+        // Phase-1 for finding the max value
+        for (int num : arr){
+            if (count == 0){
+                majorityElement = num;
+                count = 1;
+            }
+            if (majorityElement == num){
+                count++;
+            }else {
+                count--;
+            }
+        }
+        // Phase-2 Verify max element
+        int fre = 0;
+        for (int num : arr){
+            if (num == majorityElement){
+                fre++;
+            }
+        }
+        if (fre > size / 2){
+            return majorityElement;
+        }else {
+            return -1;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the Array: ");
+        int size = sc.nextInt();
+        if (size <= 0){
+            System.out.println("Array Size Must be Positive");
+            sc.close();
+            return;
+        }
+
+        int[] arr = new int[size];
+        System.out.println("Enter " + size + " Elements: ");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+
+        int result = findMajorityElement(arr,size);
+        System.out.println("Output: " + result);
+    }
+}
+
 // Not an Optimized Solution --> use brute force approach
 
+/*
 import java.util.Scanner;
 
 public class Q6_MajorityElementFinder {
@@ -62,4 +120,4 @@ public class Q6_MajorityElementFinder {
 
         System.out.print("Output: "+majorityElement(arr,size));
     }
-}
+}*/
