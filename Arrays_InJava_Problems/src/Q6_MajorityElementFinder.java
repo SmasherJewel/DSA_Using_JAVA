@@ -35,7 +35,6 @@ public class Q6_MajorityElementFinder {
         for (int num : arr){
             if (count == 0){
                 majorityElement = num;
-                count = 1;
             }
             if (majorityElement == num){
                 count++;
