@@ -29,8 +29,7 @@ Updated Array after removing the value:
 
 import java.util.Scanner;
 
-public class
-Q5_RemoveElementFromArray {
+public class Q5_RemoveElementFromArray {
 
     static int removeElement(int[] num, int val){
         int left = 0;
