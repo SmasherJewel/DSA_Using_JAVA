@@ -27,7 +27,7 @@ public class Q1_LengthOfLastWord {
 
     public static int lastLengthOfWord(String s){
 
-        if (s == null || s.length() == 0){
+        if (s == null || s.isEmpty()){
             return 0;
         }
 
