@@ -20,6 +20,8 @@ Output:
 Duplicate Values are: [2, 3]
 */
 
+// I need to solve without using the hash-map ---> It's still pending
+
 import java.util.HashSet;
 import java.util.Scanner;
 
